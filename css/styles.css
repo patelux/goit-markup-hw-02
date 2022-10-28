@@ -1,0 +1,317 @@
+/* цвет текст абзацев #757575 */
+/* основной background: #FFFFFF */
+/* цвет текст заголовка H2 #212121 */
+/* текст навигации по сайту
+        основной #212121;
+        ховер #2196F3 */
+/* цвет лого
+        основной #000000);
+        акцент #2196F3 */
+/* цвет контактов
+        основной #757575;
+        ховер #2196F3 */
+/* цвет подложки HERO #2F303A */
+/* цвет подложки кнопки blue  #2196F3;*/
+/* цвет белый  #FFFFFF */
+/* цвет адреса  #FFFFFF */
+/* контакты в футере rgba(255, 255, 255, 0.6); */
+/* background третьей секции: #F5F4FA */
+/* Портфолио */
+/* фильтр-кнопка:
+    неактивная кнопка #F5F4FA;
+    неактивная текст ##212121;
+    активная №2196F3;
+    активная текст #FFFFFF */
+/* постер: 
+     текст заголовка #212121; 
+     текст параграфа #757575;
+     */
+/* основной стиль */
+:root {
+    --basic-color: #757575;
+    --basic-white: #FFF;
+    --logo-color: #000;
+    --accent-color: #2196F3;
+    --header-link: #212121;
+    --hero-background: #2F303A;
+    --section-background: #F5F4FA;
+    --footer-contacts: rgba(255, 255, 255, 0.6);
+    --button-hover: #188CE8;
+}
+/* Студія */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--basic-color);
+    background-color: var(--basic-white);
+}
+/*  */
+/* Стилізация шапки */
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* стиль логотипа */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* стиль навигації по сайту */
+.site-nav {
+    list-style: none;
+}
+
+.link {
+    color: var(--header-link);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1px;
+    letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover {
+    color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.site-nav .link:focus {
+    color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* стиль контактів в header */
+.header-contacts {
+    list-style: none;
+}
+
+.contact-mail, .contact-phone {
+    color: var(--basic-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
+
+.contact-mail:hover, .contact-phone:hover {
+    color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-mail:focus, .contact-phone:focus {
+    color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Cтилізація секції HERO */
+.hero {
+    background-color: var(--hero-background);
+}
+
+.hero-title {
+    color: var(--basic-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    color: var(--basic-white);
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-button:hover, .hero-button:focus {
+    background-color: var(--button-hover);
+}
+
+/* Cтилізація секції Особливості */
+.features-list {
+    list-style: none;
+}
+
+.features-title {
+    color: var(--header-link);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+/*Стилізація секції Чим займаємося  */
+.main-title {
+    color: var(--header-link);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;    
+}
+
+.main-list {
+    list-style: none;
+}
+
+/* Стилізація секції Наша команда */
+.stuff-section {
+    background-color: var(--section-background);
+}
+
+.stuff-title {
+    color: var(--header-link);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+}
+
+.stuff-list {
+       list-style: none;
+}
+
+.stuff-img {
+        background-color: var(--basic-white);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.stuff-name {
+    color: var(--header-link);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.stuff-position {
+    color: var(--basic-color);
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* Стилізація Footer */
+footer {
+    background-color: var(--hero-background);
+}
+
+.footer-logo,
+.footer-accent {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.footer-logo{
+color: var(--basic-white);    
+}
+.footer-accent {
+    color: var(--accent-color);
+}
+.footer-address{
+    font-style: normal;
+}
+
+.address-list {
+    list-style: none;
+}
+
+.address-link,
+.mail-link,
+.phone-link {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address-link {
+    color: var(--basic-white);
+}
+
+.mail-link,
+.phone-link {
+    color: var(--footer-contacts);
+}
+.address-link:hover,
+.mail-link:hover,
+.phone-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.address-link:focus,
+.mail-link:focus,
+.phone-link:focus {
+    color: var(--accent-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* Портфоліо */
+/* Головна секція */
+.filters {
+    list-style: none;
+}
+.button-portfolio{
+    color: var(--header-link);
+    background-color: var(--section-background);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.button-portfolio:focus, .button-portfolio:hover, .button-portfolio:active {
+    color: var(--basic-white);
+    background-color: var(--accent-color);
+   }
+
+.posters {
+    list-style: none;
+}
+.poster-title {
+    color: var(--header-link);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.poster-descr {
+    color: var(--basic-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
