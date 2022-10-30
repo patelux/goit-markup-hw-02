@@ -36,7 +36,7 @@
     --hero-background: #2F303A;
     --section-background: #F5F4FA;
     --footer-contacts: rgba(255, 255, 255, 0.6);
-    --button-hover: #188CE8;
+    --btn-hover: #188CE8;
 }
 /* Студія */
 body {
@@ -46,7 +46,7 @@ body {
 }
 /*  */
 /* Стилізация шапки */
-header {
+.hdr {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -128,7 +128,7 @@ header {
     text-transform: uppercase;
 }
 
-.hero-button {
+.hero-btn {
     color: var(--basic-white);
     background-color: var(--accent-color);
     font-family: inherit;
@@ -141,8 +141,8 @@ header {
     cursor: pointer;
 }
 
-.hero-button:hover, .hero-button:focus {
-    background-color: var(--button-hover);
+.hero-btn:hover, .hero-btn:focus {
+    background-color: var(--btn-hover);
 }
 
 /* Cтилізація секції Особливості */
@@ -280,7 +280,7 @@ color: var(--basic-white);
 .filters {
     list-style: none;
 }
-.button-portfolio{
+.btn-portfolio{
     color: var(--header-link);
     background-color: var(--section-background);
     font-family: inherit;
@@ -294,7 +294,7 @@ color: var(--basic-white);
     cursor: pointer;
 }
 
-.button-portfolio:focus, .button-portfolio:hover, .button-portfolio:active {
+.btn-portfolio:focus, .btn-portfolio:hover, .btn-portfolio:active {
     color: var(--basic-white);
     background-color: var(--accent-color);
    }
